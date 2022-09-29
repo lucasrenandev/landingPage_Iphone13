@@ -70,6 +70,15 @@ header nav ul li a:hover {
     border-bottom: 1px solid #fff;
 }
 
+header .menu {
+    cursor: pointer;
+    display: none;
+}
+
+header .menu img {
+    filter: invert(1);
+}
+
 /* ==== MAIN ==== */
 
 main {

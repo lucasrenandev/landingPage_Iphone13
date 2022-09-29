@@ -1,3 +1,4 @@
+// BACKGROUND
 const green = document.getElementById("green")
 const pink = document.getElementById("pink")
 const blue = document.getElementById("blue")
@@ -36,4 +37,20 @@ white.addEventListener("click", function() {
 red.addEventListener("click", function() {
     imgPhone.src = "assets/img/red.png"
     circleBackground.style.background = "#CF4F68"
+})
+
+// MENU RESPONSIVO
+const menu = document.querySelector("#menu")
+const nav = document.querySelector("nav ul")
+const menuImg = document.querySelector("#menu img")
+
+menu.addEventListener("click", () => {
+    nav.classList.toggle("active")
+
+    if(menuImg.getAttribute("src") === "assets/img/menu/open.svg") {
+        menuImg.setAttribute("src", "assets/img/menu/close.svg")
+    }
+    else {
+        menuImg.setAttribute("src", "assets/img/menu/open.svg")
+    }
 })
